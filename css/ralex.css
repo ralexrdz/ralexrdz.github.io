@@ -1,0 +1,116 @@
+#impress .past, #impress .future {
+  opacity: 0.1;
+}
+#impress .step.future:hover {
+  opacity: 0.5;
+}
+
+.step a {
+  font-size: 2rem;
+}
+
+.step small {
+  font-size: 50%;
+}
+
+pre code {
+  font-size: 1rem;
+}
+
+.stack {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.stack span {
+  background-color: rgb(213, 155, 236);
+  border-radius: 0.2em;
+  padding: 5px;
+  color:rgb(70, 1, 97);
+  text-align: center;
+  font-weight: bold;
+}
+ 
+@media screen and (max-width: 780px) {
+  .stack {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 460px) {
+  .stack {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#home  {
+  font-size: 5rem;
+  font-family: 'Space Mono';
+}
+#home h3 {
+  font-size: 2rem;
+  font-family: 'Square Antiqua';
+
+}
+#home h4 {
+  font-size: 1.8rem;
+  font-family: 'Square Antiqua';
+}
+#home p {
+  font-size: 1.3rem;
+  font-family: 'Square Antiqua';
+}
+#work ul, #work a {
+  display: none;
+  text-align: center;
+}
+#work.present ul{
+  display: block;
+}
+#work.present a {
+  display: inline;
+}
+
+#education ul {
+  display: none;
+  list-style: disc;
+  margin: 0 20%;
+}
+#education.present ul {
+  display: block;
+}
+#education .stack {
+  display: none;
+}
+#education.present .stack {
+  display: grid;
+}
+#education h3 { font-size: 2rem; }
+#education h4 { font-size: 1.7rem; }
+#education h5 { font-size: 1.5rem; }
+
+#journey p {
+  font-size: 1rem;
+}
+#vts p {
+  font-size: 1rem;
+  padding: 10px;
+}
+#vts p small {
+  font-size: 0.7rem;
+}
+
+h1 small {
+  font-size: 1rem !important;
+  position: absolute;
+  text-align: right;
+  right: 0px;
+}
+
+#journey #atajo {
+  display: flex;
+  justify-content: space-around;
+}
+#journey #atajo a {
+  font-size: 1.5rem;
+}

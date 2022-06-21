@@ -2,11 +2,499 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Ralex Dev</title>
+  <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+  <link href="http://fonts.cdnfonts.com/css/square-antiqua-2" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--
+        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+       
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        
+    -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="css/ralex.css">
+  <link href="css/rain.css" rel="stylesheet" />
+  <link href="css/impress-demo.css" rel="stylesheet" />
+  <link href="css/impress-common.css" rel="stylesheet" />
 </head>
-<body>
-  <img style="width: 100%" src="./cv-engish-high.png" />
-</body>
+<body class="back-row-toggle splat-toggle">
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+  <div id="impress">
+    <div
+      id="home"
+      class="step"
+    >
+      <h1>Ralex - Dev</h1>
+      <h3>
+        ~ Fullstack Agile Web Devoloper ~
+      </h3>
+      <h4>
+        ~ UX ~ DevOps ~ Hacktivism ~
+      </h4>
+      <p>Passion for collaboratively building tools and knowledge </p>
+    </div>
+    <div id="work"
+      class="step"
+      data-x="350"
+      data-y="50"
+      data-rotate-x="10"
+      data-rotate-y="50"
+    >
+      <h1><i class="fa-solid fa-code"></i> Work experience</h1>
+      <ul>
+        <li>
+          <h3>as Fullstack Web <small>(since 2011)</small></h3>
+          <div class="stack">
+            <span>NodeJS</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>Typescript</span>
+            <span>React</span>
+            <span>Angular</span>
+            <span>JQuery</span>
+            <span>Svelte</span>
+          </div>
+        </li>
+        <li>
+          <h3>as Devops <small>(since 2018)</small></h3>
+          <div class="stack">
+            <span>Unix</span>
+            <span>Bash</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Monitoring</span>
+            <span>CI/CD</span>
+            <span>Testing</span>
+            <span>Scripting</span>
+          </div>
+        </li>
+        <li>
+          <h3>as Coding Teacher <small>(since 2016)</small></h3>
+          <div class="stack">
+            <span>Algorithms</span>
+            <span>Databases</span>
+            <span>Web Development</span>
+            <span>UX Design</span>
+          </div>
+        </li>
+      </ul>
+      <a href="/#/journey">check my journey <i class="fa-solid fa-person-hiking"></i></a>
+    </div>
+    <div id="education"
+      class="step"
+      data-x="300"
+      data-y="-200"
+      data-rotate-x="40"
+      data-rotate="-30"
+      data-rotate-y="30"
+    >
+      <h1><i class="fa-solid fa-book-open"></i> Education</h1>
+      <ul>
+        <li>
+          <h3>Computer Science Bachelor</h3>
+        </li>
+        <li>
+         <h4>Applied Maths Bacherlor (80%)</h4>
+        </li>
+        <li>
+          <h5>Bilingual middle and highschool</h5>
+        </li>
+        <li>
+          <h5>Montessori kinder and primary</h5>
+        </li>
+      </ul>
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i>Skills</h2>
+      <div class="stack">
+        <span>Math & Logic</span>
+        <span>DIY</span>
+        <span>Quick learner</span>
+        <span>Advance english</span>
+        <span>Non-violent Communication</span>
+        <span>Group Management</span>
+        <span>Collaborative Work</span>
+        <span>Conflict Resolution</span>
+        <span>Easy of speak</span>
+        <span>Creativity</span>
+      </div>
+    </div>
+    <div id="journey"
+      class="step"
+      data-x="1350"
+      data-y="1300"
+    >
+      <h1><i class="fa-solid"></i>My Dev journey</h1>
+     
+      <div class="mermaid" style="background-color: azure;">
+        %%{init: {'theme':'forest'}}%%
+        gantt
+          dateFormat  YYYY-MM
+          axisFormat %b %Y
+          section CCD
+          Backend, DBs and Devops           :active, ccd1, 2019-10, 2022-06
+          section NXT
+          Consulting Devops AWS      :active, nxt1, 2020-05, 2022-06 
+          section Sertech
+          Web & Data Mining      :done, ser1, 2018-10, 2019-09
+          section OnuMujeres
+          Cartographic Demo      :done, onu1, 2018-09, 2018-10 
+          section Borde Político
+          Web & UX      :done, brd1, 2018-04, 2018-10
+          section Kinit
+          Fullstack web      :done, knt1, 2017-06, 2018-04 
+          section Vientos.coop 
+          CTO & CoFounder :active, vts1, 2016-04, 2020-01
+          section Mextra (NL)
+          Software Engineer :done, mxt1, 2014-08, 2016-04 
+          section SPS
+          Backend and DB :done, sps1, 2012-05, 2014-08 
+          section HewlettPackard
+          Intership - Web :done, hp1, 2011-01, 2011-12 
+
+          click ccd1 href "/#/ccd"
+          click nxt1 href "/#/nxt"
+          click ser1 href "/#/ser"
+          click onu1 href "/#/onu"
+          click brd1 href "/#/brd"
+          click knt1 href "/#/knt"
+          click vts1 href "/#/vts"
+          click mxt1 href "/#/mxt"
+          click sps1 href "/#/sps"
+          click hp1 href "/#/hp"
+
+        </div>
+        <p>*click each job for details</p>
+        <div id="atajo">
+          <a href="/#/ccd">Go to my last job</a>
+          <a href="/#/ccd">Go to my favorite job</a>
+        </div>   
+    </div>
+    <div id="ccd"
+      class="step skip"
+      data-goto-prev="journey"  
+      data-goto-next="nxt"  
+      data-rel-x="1500"
+    >
+      <h1>Centro de Cultura Digital <small>20hrs per week <br> since 2018</small></h1> 
+      <div class="stack">
+        <span>NodeJs</span>
+        <span>MongoDB</span>
+        <span>Gitlab CI</span>
+        <span>Linux Server</span>
+        <span>Nginx</span>
+        <span>Apache</span>
+        <span>GraphQL</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>React</span>
+        <span>Svelte</span>
+        <span>Storybook JS</span>
+        <span>Keystone JS</span>
+      </div>
+      <div><a href="https://centroculturadigital.mx">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let CCD = {
+          about: `Phisical and digital space to share and talk aroung digital culture.
+                  Based in Mexico City, exported to the world. 
+                  Over 15 websites and platforms`,
+          websites: '10+'
+          devops: [ 'docker', 'kubernetes', 'monitoring', 'stress testing' ]
+          backend: {
+            api: ['graphQl'], //keystone-js 
+            cms: ['bootstraped, customizable'] //react
+            dbs: ['migrations', 'backups', 'scripts'] // mongodb
+          },
+          frontend: {
+            svelte: ['graphql', 'apollo'],
+            storybook: 'setup',
+            ci_cd: 'gitlab'
+          }
+        }  
+      </code></pre>
+    </div>
+    <div id="nxt"
+      class="step skip"
+      data-goto-prev="ccd"  
+      data-goto-next="ser"  
+      data-rel-x="1500"
+    >
+      <h1>NxtIot - NxtAgro <small>4hrs per week <br> since 2020</small></h1> 
+      <div class="stack">
+        <span>NodeJs</span>
+        <span>MongoDB</span>
+        <span>Linux Server</span>
+        <span>AWS</span>
+        <span>Vue</span>
+        <span>RabbitMD</span>
+        <span>ExpressJs</span>
+      </div>
+      <div><a href="https://nxtagro.io/en/inicio/">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let NxtAgro = {
+          about: `Integrates IoT technology and agronomic practices 
+                  to increase your production level. 
+                  Monitoring and controlling over a 100k devices`,
+          devops: [ 'dockerization', 'aws', 'linux server', 'stress testing' ],
+          debuggin: [ 
+            'bug extermination', // vue
+            'query optimization' // mongodb and mysql
+          ]
+          
+        }  
+      </code></pre>
+    </div>
+    <div id="ser"
+      class="step skip"  
+      data-rel-x="1500"
+      data-goto-prev="nxt"  
+      data-goto-next="onu"
+    >
+      <h1>Sertech <small>20hrs per week <br> 2019-2020</small></h1> 
+      <div class="stack">
+        <span>Data Mining</span>
+        <span>NodeJs</span>
+        <span>MongoDB</span>
+        <span>ElasticSearch</span>
+        <span>React</span>
+        <span>Mapbox</span>
+      </div>
+      <div><a href="https://sertech.mx">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let sertech = {
+          about: `Using data mining and visualization to create 
+                  market intel, social network analysis and politic census`,
+          data: [ 'mapbox', 'D3js', 'web scraping', 'twitter & fb api' ],
+          backend: [ 
+            'expressJS', 
+            'elasticsearch',
+            'db normalization' // mongo
+          ]
+        }  
+      </code></pre>
+    </div>
+    <div id="onu"
+      class="step skip"
+      data-goto-prev="ser"  
+      data-goto-next="brd"  
+      data-rel-x="1500"
+    >
+      <h1>Onu Mujeres <small>single freelance <br> in 2018</small></h1> 
+      <div class="stack">
+        <span>SVG</span>
+        <span>HTML</span>
+        <span>JS</span>
+      </div>
+      <pre><code class="language-js" data-trim>
+        let onuMujeresDemo = `
+          Data vizualization demo showing women 
+          participation statistics in Latinamerica
+        ` 
+      </code></pre>
+    </div>
+    <div id="brd"
+      class="step skip"
+      data-goto-prev="onu"  
+      data-goto-next="knt"  
+      data-rel-x="1500"
+    >
+      <h1>Borde Político <small>single freelance <br> in 2018</small></h1> 
+      <div class="stack">
+        <span>NodeJs</span>
+        <span>ExpressJs</span>
+        <span>MongoDB</span>
+        <span>Polymer</span>
+      </div>
+      <div><a href="https://borde.mx/">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let bordePolitico = {
+          about: `Open goberment data, co-creation of legislation 
+                  and participatory democracy`,
+          backend: [ 
+            'mongodb', 
+            'express Rest API',
+          ],
+          frontend: [
+            'mapbox',
+            'svg', //data visalization
+            'polymer'
+          ]
+        }  
+      </code></pre>
+    </div>
+    <div id="knt"
+      class="step skip"
+      data-goto-prev="brd"  
+      data-goto-next="vts"  
+      data-rel-x="1500"
+    >
+      <h1>Kinit <small>20hrs per week <br> in 2018</small></h1> 
+      <div class="stack">
+        <span>NodeJs</span>
+        <span>MySQL</span>
+        <span>Linux Server</span>
+        <span>React</span>
+        <span>ExpressJS</span>
+      </div>
+      <div><a href="https://kinit.mx">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let Kinit = {
+          about: `Product UX Design`,
+          backend: [ 
+            'mongodb', 
+            'data normalization',
+            'query optimization',
+          ],
+          frontend: [
+            'react',
+          ]
+        }  
+      </code></pre>
+    </div>
+    <div id="vts"
+      class="step skip"
+      data-goto-prev="knt"  
+      data-goto-next="mxt"  
+      data-rel-x="1500"
+    >
+      <h1>Vientos Coop <small>all my free time <br> 2016-2019</small></h1> 
+      <div class="stack">
+        <span>NodeJs</span>
+        <span>MongoDB</span>
+        <span>Polymer</span>
+        <span>PWA</span>
+        <span>LXC</span>
+        <span>HapiJS</span>
+      </div>
+      <p>Co founder of a Platform Coop launched as a Progresive Web App to map activism projects with their needs and offers to encence collaboration on social topics</p>
+      <p><small>currently offline</small></p>
+      <pre><code class="language-js" data-trim>
+        let Vientos = {
+          organization: 'sociocracy',
+          objectives: 'theory of change',
+          frontend: [ 
+            'polymer', // PWA,
+            'UX designs and tests'
+          ],
+          backend: [
+            'nodeJS',
+            'hapiJS', // REST API
+            'mongodb', // with mongoose ORM
+          ],
+          devops: [ 'linux server', 'dev / steging / prod', 'LXC', 'Raven - Err mngmt']
+        }  
+      </code></pre>
+    </div>
+    <div id="mxt"
+      class="step skip"
+      data-goto-prev="vts"  
+      data-goto-next="sps"  
+      data-rel-x="1500"
+    >
+      <h1>Mextra <small>insite 2015 <br> remote 2016</small></h1> 
+      <div class="stack">
+        <span>.Net</span>
+        <span>MS SQL</span>
+        <span>JS</span>
+        <span>HTML</span>
+        <span>BootstrapJS</span>
+        <span>jQuery</span>
+      </div>
+      <div><a href="https://mextra.nl/">Visit web Site</a></div>
+      <pre><code class="language-js" data-trim>
+        let Mextra = {
+          about: `Statistics and doctor-pacient management for hospitals, 
+                  based in the Netherlands`,
+          data: [ 'mapbox', 'D3js', 'web scraping', 'twitter & fb api' ],
+          backend: [ 
+            'mongodb', 
+            'express Rest API',
+          ],
+          frontend: [
+            'mapbox',
+            'svg', //data visalization
+            'polymer'
+          ]
+        }  
+      </code></pre>
+    </div>
+    <div id="sps"
+      class="step skip"
+      data-goto-prev="mxt"  
+      data-goto-next="hp"  
+      data-rel-x="1500"
+    >
+      <h1>SPS Consulting Group <small>20hrs per week <br> 2012-2014</small></h1> 
+      <div class="stack">
+        <span>Java</span>
+        <span>MS SQL</span>
+      </div>
+      <div><a href="">Visit web site</a></div>
+      <pre><code class="language-js" data-trim>
+        let SPS = {
+          about: `IT Consulting Group. IBM partner `,
+          backend: [ 
+            'JAVA', 
+            'MSSQL',
+          ],
+          frontend: [
+            '.NET',
+            'jQuery',
+          ]
+        }  
+      </code></pre>
+    </div>
+    <div id="hp"
+      class="step skip"
+      data-goto-prev="sps"  
+      data-goto-next="journey"  
+      data-rel-x="1500"
+    >
+      <h1>Hewlett Packard - Intership <small>20hrs per week <br> in 2011</small></h1> 
+      <div class="stack">
+        <span>.Net</span>
+        <span>MS SQL</span>
+        <span>JS</span>
+        <span>HTML</span>
+        <span>BootstrapJS</span>
+        <span>jQuery</span>
+      </div>
+      <pre><code class="language-js" data-trim>
+        let HP = {
+          about: `Intership in the presales area. 
+                  Focus on speeding the process of client proposals. 
+                  I created a website to review and create pre-approved 
+                  proposals based on previos accepted proposals`,
+          frontend: '.NET and jQuery',
+          backend: 'MS SQL',
+          data: 'Excel Macros, PDF creation, PDF analysis'
+        }  
+      </code></pre>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/impress.js@1.1.0/js/impress.js"></script>
+  <!-- <script src="js/impress.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="js/rain.js"></script>
+  <script>
+    var api = impress();
+    api.init();
+    mermaid.initialize({startOnLoad:true});
+    hljs.highlightAll();
+  </script>
+</body> 
 </html>
