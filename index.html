@@ -25,15 +25,13 @@
         
     -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
-  <link rel="stylesheet" href="css/ralex.css">
-  <link href="css/rain.css" rel="stylesheet" />
-  <link href="css/impress-demo.css" rel="stylesheet" />
-  <link href="css/impress-common.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/ralex.css">
+  <link href="/css/rain.css" rel="stylesheet" />
+  <link href="/css/impress-demo.css" rel="stylesheet" />
+  <link href="/css/impress-common.css" rel="stylesheet" />
 </head>
 <body class="back-row-toggle splat-toggle">
-  <div class="hint">
-    Hola
-  </div>
+  
   <div id="impress">
     <div id="home"
       class="step"
@@ -46,6 +44,7 @@
         ~ UX ~ DevOps ~ Hacktivism ~
       </h4>
       <p>Passion for collaboratively building tools and knowledge </p>
+      <div class="pdf"><a href="https://archive.org/download/cv-english/cv-english.pdf" target="_blank">Just give me a PDF</a></div>
     </div>
     <div id="education"
       class="step"
@@ -514,7 +513,15 @@
   <script src="https://unpkg.com/impress.js@1.1.0/js/impress.js"></script>
   <!-- <script src="js/impress.js"></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-  <script src="js/rain.js"></script>
+  <script src="/js/rain.js"></script>
+  <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate. </p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
   <script>
     var api = impress();
     api.init();

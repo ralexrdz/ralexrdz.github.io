@@ -588,11 +588,6 @@ a:focus {
     padding: 20px;
     z-index: 100;
     opacity: 0;
-    -webkit-transform: translateY(400px);
-    -moz-transform: translateY(400px);
-    -ms-transform: translateY(400px);
-    -o-transform: translateY(400px);
-    transform: translateY(400px);
     -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
     -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
     -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
@@ -608,7 +603,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-.impress-on-bored .hint {
+.impress-on-home .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
