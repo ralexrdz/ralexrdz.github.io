@@ -1,7 +1,7 @@
 #impress .past, #impress .future {
   opacity: 0.1;
 }
-#impress .step.future:hover {
+#impress .future:hover {
   opacity: 0.5;
 }
 
@@ -11,6 +11,7 @@
 
 .step small {
   font-size: 50%;
+  opacity: 0.8;
 }
 
 pre code {
@@ -59,16 +60,34 @@ pre code {
 #home p {
   font-size: 1.3rem;
   font-family: 'Square Antiqua';
+  margin: 20px;
 }
 #work ul, #work a {
   display: none;
-  text-align: center;
 }
 #work.present ul{
   display: block;
+  font-size: 2.2rem;
+}
+#work.present ul h3{
+  margin-left: 25px;
 }
 #work.present a {
-  display: inline;
+  display: block;
+  text-align: right;  
+  padding-top: 10px;  
+}
+#work .stack > span {
+  display: flex;
+  font-size: 1rem;
+}
+#work span > span{
+  flex-grow: 1;
+}
+#work span small {
+  font-size: 0.8rem;
+  line-height: 15px;
+  opacity: 0.7;
 }
 
 #education ul {
@@ -88,8 +107,10 @@ pre code {
 #education h3 { font-size: 2rem; }
 #education h4 { font-size: 1.7rem; }
 #education h5 { font-size: 1.5rem; }
+#education p { font-size: 1rem; }
+#education a { font-size: 1rem; }
 
-#journey p {
+#journey p{
   font-size: 1rem;
 }
 #vts p {
@@ -113,4 +134,50 @@ h1 small {
 }
 #journey #atajo a {
   font-size: 1.5rem;
+}
+#about .me {
+  display: flex;
+}
+
+#about .contact {
+  text-align: right;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+#about ul {
+  font-size: 1.5rem;
+}
+
+#about section {
+  display: none;
+}
+
+#about.present section {
+  display: block;
+}
+
+.mermaid {
+  background-color: transparent !important;
+}
+
+.sectionTitle {
+  fill: white !important;
+  font-weight: bold;
+}
+
+#impress #journey .taskTextOutsideRight {
+  fill: aquamarine !important;
+}
+
+.tick text {
+  fill: white !important;
 }
